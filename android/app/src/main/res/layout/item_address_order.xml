@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/orderInfoRoot"
+        layout="@layout/item_address_order_content" />
+
+    <TextView
+        android:id="@+id/orderMore"
+        style="@style/AppTheme.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_margin_sbig"
+        android:text="@string/order_more" />
+</LinearLayout>

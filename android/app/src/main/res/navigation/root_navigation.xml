@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_navigation"
+    app:startDestination="@+id/nested_yacht">
+
+    <navigation
+        android:id="@+id/nested_yacht"
+        app:startDestination="@+id/nav_enter_yacht">
+
+        <fragment
+            android:id="@+id/nav_filter_yacht"
+            android:name="com.gravitygroup.avangard.presentation.yacht.YachtFilterFragment"
+            android:label="Для yacht sharing" />
+
+        <fragment
+            android:id="@+id/nav_client_enter"
+            android:name="com.gravitygroup.avangard.presentation.yacht.ClientYachtFragment"
+            android:label="Для yacht sharing" />
+
+        <fragment
+            android:id="@+id/nav_captain_cabinet"
+            android:name="com.gravitygroup.avangard.presentation.yacht.YachtCaptainFragment"
+            android:label="Для yacht sharing" />
+
+        <fragment
+            android:id="@+id/nav_enter_yacht"
+            android:name="com.gravitygroup.avangard.presentation.yacht.EnterYachtFragment"
+            android:label="Для yacht sharing" />
+
+        <fragment
+            android:id="@+id/nav_yacht_list"
+            android:name="com.gravitygroup.avangard.presentation.yacht.YachtListFragment"
+            android:label="Список Яхт">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.yacht.YachtListSpecs" />
+        </fragment>
+
+        <action
+            android:id="@+id/action_to_client_yacht"
+            app:destination="@id/nav_client_enter" />
+        <action
+            android:id="@+id/action_to_yacht_filter"
+            app:destination="@id/nav_filter_yacht" />
+        <action
+            android:id="@+id/action_to_yacht_list"
+            app:destination="@id/nav_yacht_list" />
+
+        <action
+            android:id="@+id/action_to_captain_cabinet"
+            app:destination="@id/nav_captain_cabinet" />
+
+    </navigation>
+
+    <navigation
+        android:id="@+id/nested_auth"
+        app:startDestination="@+id/nav_auth">
+
+        <fragment
+            android:id="@+id/nav_preview_auth"
+            android:name="com.gravitygroup.avangard.presentation.auth.PreviewAuthFragment"
+            android:label="Для повторных запусков" />
+
+        <fragment
+            android:id="@+id/nav_auth"
+            android:name="com.gravitygroup.avangard.presentation.auth.AuthFragment"
+            android:label="Авторизация">
+
+            <action
+                android:id="@+id/action_to_sms_code"
+                app:destination="@id/nav_sms_code" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_sms_code"
+            android:name="com.gravitygroup.avangard.presentation.auth.SmsVerificationFragment"
+            android:label="Смс - Код">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.auth.SmsCodeSpecs" />
+        </fragment>
+    </navigation>
+
+    <navigation
+        android:id="@+id/nested_main"
+        app:startDestination="@id/nav_orders">
+
+        <fragment
+            android:id="@+id/nav_master_orders"
+            android:name="com.gravitygroup.avangard.presentation.master_orders.MasterOrdersFragment"
+            android:label="Заказы мастера" />
+
+        <fragment
+            android:id="@+id/nav_orders"
+            android:name="com.gravitygroup.avangard.presentation.orders.OrdersFragment"
+            android:label="Заказы" />
+
+        <fragment
+            android:id="@+id/nav_map_orders"
+            android:name="com.gravitygroup.avangard.presentation.map.MapOrdersFragment"
+            android:label="Заказы на карте">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.map.data.StartMapType" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_filter"
+            android:name="com.gravitygroup.avangard.presentation.filter.FilterFragment"
+            android:label="Фильтр">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.filter.data.FilterOpenSpecs" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_filter_catalog"
+            android:name="com.gravitygroup.avangard.presentation.filter.FilterCatalogFragment"
+            android:label="Выбор названия">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.filter.data.FilterCatalogSpecs" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_profile"
+            android:name="com.gravitygroup.avangard.presentation.profile.ProfileFragment"
+            android:label="Заказы">
+
+            <argument
+                android:name="specs"
+                android:defaultValue="@null"
+                app:argType="com.gravitygroup.avangard.presentation.profile.ProfileSpecs"
+                app:nullable="true" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_order_info"
+            android:name="com.gravitygroup.avangard.presentation.order_info.OrderInfoFragment"
+            android:label="Информация о заказе">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.orders.data.OrderShortUIModel" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_catalog"
+            android:name="com.gravitygroup.avangard.presentation.catalog.CatalogFragment"
+            android:label="Выбор названия">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.catalog.data.CatalogSpecs" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_photo"
+            android:name="com.gravitygroup.avangard.presentation.photo.PhotoFragment"
+            android:label="Фото">
+
+            <argument
+                android:name="specs"
+                android:defaultValue="@null"
+                app:argType="com.gravitygroup.avangard.presentation.photo.PhotoSpecs"
+                app:nullable="true" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_order_edit"
+            android:name="com.gravitygroup.avangard.presentation.order_edit.OrderEditFragment"
+            android:label="Заказ">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.order_info.data.OrderFullUIModel" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/nav_history"
+            android:name="com.gravitygroup.avangard.presentation.orders_history.OrdersHistoryFragment"
+            android:label="@string/menu_order_history" />
+
+        <fragment
+            android:id="@+id/nav_settings"
+            android:name="com.gravitygroup.avangard.presentation.menu.settings.SettingsFragment"
+            android:label="@string/notification_title" />
+
+        <fragment
+            android:id="@+id/nav_about"
+            android:name="com.gravitygroup.avangard.presentation.menu.about.AboutAppFragment"
+            android:label="О приложении" />
+
+        <dialog
+            android:id="@+id/nav_exit_confirm"
+            android:name="com.gravitygroup.avangard.presentation.dialogs.exit.ExitDialogFragment"
+            android:label="Подтверждение выхода" />
+
+        <dialog
+            android:id="@+id/nav_status_confirm"
+            android:name="com.gravitygroup.avangard.presentation.dialogs.status.StatusDialogFragment"
+            android:label="Подтверждение статуса заказа">
+
+            <argument
+                android:name="specs"
+                app:argType="com.gravitygroup.avangard.presentation.dialogs.status.OrderConfirmUIModel" />
+
+        </dialog>
+
+        <dialog
+            android:id="@+id/nav_order_notification"
+            android:name="com.gravitygroup.avangard.presentation.dialogs.order.OrderNotificationDialog"
+            android:label="Установка дополнительного оповещения">
+
+            <argument
+                android:name="specs"
+                app:argType="long" />
+
+        </dialog>
+
+        <action
+            android:id="@+id/action_to_master_orders"
+            app:destination="@id/nav_master_orders" />
+
+        <action
+            android:id="@+id/action_to_catalog"
+            app:destination="@id/nav_catalog" />
+
+        <action
+            android:id="@+id/action_to_order_info"
+            app:destination="@id/nav_order_info" />
+
+        <action
+            android:id="@+id/action_to_map_orders"
+            app:destination="@id/nav_map_orders" />
+
+        <action
+            android:id="@+id/action_to_order_edit"
+            app:destination="@id/nav_order_edit" />
+
+        <action
+            android:id="@+id/action_to_orders"
+            app:destination="@id/nav_orders" />
+
+        <action
+            android:id="@+id/action_to_photo"
+            app:destination="@id/nav_photo" />
+
+        <action
+            android:id="@+id/action_to_profile"
+            app:destination="@id/nav_profile" />
+
+        <action
+            android:id="@+id/action_to_filter"
+            app:destination="@id/nav_filter" />
+
+        <action
+            android:id="@+id/action_to_filter_catalog"
+            app:destination="@id/nav_filter_catalog" />
+
+        <action
+            android:id="@+id/action_to_settings"
+            app:destination="@id/nav_settings" />
+
+        <action
+            android:id="@+id/action_to_exit"
+            app:destination="@id/nav_exit_confirm" />
+
+        <action
+            android:id="@+id/action_to_status_confirm"
+            app:destination="@id/nav_status_confirm" />
+
+        <action
+            android:id="@+id/action_to_order_notification"
+            app:destination="@id/nav_order_notification" />
+    </navigation>
+
+    <action
+        android:id="@+id/action_global_to_auth"
+        app:destination="@id/nested_auth"
+        app:popUpTo="@id/root_navigation"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/action_global_to_main"
+        app:destination="@id/nested_main"
+        app:popUpTo="@id/root_navigation"
+        app:popUpToInclusive="false" />
+
+</navigation>

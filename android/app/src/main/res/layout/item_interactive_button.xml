@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/interactiveButton"
+    style="@style/AppTheme.SelectableButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:checkable="true"
+    android:textColor="@drawable/sel_button_text"
+    android:backgroundTint="@drawable/sel_button_background"
+    app:strokeColor="?colorBorder"
+    app:strokeWidth="@dimen/divider_height" />
+
+

@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_name">ЯхтШеринг</string>
+
+    <!-- Error -->
+    <string name="error_api_default">Ошибка сервера</string>
+    <string name="error_api_break_date">Проверьте данные!</string>
+    <string name="error_api_token_error">Ошибка токена</string>
+    <string name="error_api_sms_send_error">Ошибка отправки СМС</string>
+    <string name="error_no_network">Отсутствует подключение к интернету</string>
+    <string name="hint_access_to_network">Поехали, есть подключение к интернету</string>
+    <string name="error_login_or_password">Неправильный логин или пароль.\nПопробуйте ещё раз.</string>
+    <string name="error_sms_code">Неправильный смс-код.\nПопробуйте ещё раз.</string>
+    <string name="error_unknown">Что-то пошло не так.\nОбратитесь к разработчику приложения.</string>
+
+    <!-- Common -->
+    <string name="empty_order_list">В данный момент нет\nдоступных заказов</string>
+    <string name="empty_yacht_list">В данный момент нет\nдоступных яхт</string>
+    <string name="loading">Загрузка</string>
+
+    <!-- Dialog buttons -->
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_delete">Удалить</string>
+    <string name="dialog_warning">Предупреждение</string>
+
+    <!-- Title -->
+    <string name="profile_title">Профиль</string>
+    <string name="main_title">На рассмотрении</string>
+    <string name="order_edit_title">Заказ</string>
+    <string name="order_master_title">Заказы</string>
+    <string name="filter_title">Фильтр</string>
+    <string name="filter_item_title">Фильтр %d</string>
+    <string name="orders_history_title">История заказов</string>
+
+    <!-- Edit -->
+    <string name="edit_time_verification_title">Неверно установлено время выезда</string>
+    <string name="edit_date_verification_title">Неверно установлена дата выезда</string>
+    <string name="edit_time_verification_text">Установите время в диапазоне от 8 часов до 22:59</string>
+    <string name="edit_date_grow_wrong">Установите дату больше, чем в предыдущем времени выезда</string>
+    <string name="edit_time_grow_wrong">Установите временной диапозон больше, чем в предыдущем времени выезда</string>
+    <string name="edit_time_start_more_end_wrong">Установите стартовый временной диапозон меньше, чем завершающий</string>
+
+    <!-- Auth -->
+    <string name="version_prefix">v %s</string>
+    <string name="login_hint">Введите логин</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="next_button">Далее</string>
+    <string name="support_title">Телефон поддержки:</string>
+    <string name="support_phone_number">+7(342)326-99-00</string>
+
+    <!-- Sms-->
+    <string name="sms_code_title">SMS - Код</string>
+    <string name="sms_code_hint">Вам отправлен СМС-код,\nвведите его в поле ниже</string>
+    <string name="sms_code_expiration_timeout">Повторная отправка SMS-Кода\nдоступна через: %d сек</string>
+    <string name="enter_button">Войти</string>
+    <string name="send_sms_button">Отправить SMS-код</string>
+
+    <!-- Profile -->
+    <string name="login_title">Логин:</string>
+    <string name="fio_title">ФИО:</string>
+
+    <!-- Order -->
+    <string name="order_phone">Тел:</string>
+    <string name="order_type">Тип:</string>
+    <string name="order_name">Название:</string>
+    <string name="order_number">№ Заказа:</string>
+    <string name="order_date">Дата и время заказа:</string>
+    <string name="order_more">Подробнее</string>
+
+    <!-- Menu -->
+    <string name="menu_order">Заказы</string>
+    <string name="menu_order_consideration">Список заказов на рассмотрении</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_order_history">История заказов</string>
+    <string name="menu_about">О приложении</string>
+    <string name="menu_exit">Выход</string>
+
+    <!-- Order info -->
+    <string name="order_info_address">Адрес</string>
+    <string name="order_info_phone">Номер телефона</string>
+    <string name="order_can_not_call_by_phone">Невозможно открыть приложения, поддерживающие звонки</string>
+    <string name="order_info_type">Вид техники</string>
+    <string name="order_info_name">Название техники</string>
+    <string name="order_info_description">Описание комплектации</string>
+    <string name="order_info_description_malfunction">Описание неисправности</string>
+    <string name="order_info_description_step">Описание этапа ремонта</string>
+    <string name="order_info_date">Дата выезда</string>
+    <string name="order_info_time">Время выезда</string>
+    <string name="order_info_date_more">Дата выезда (доп)</string>
+    <string name="order_info_time_more">Время выезда (доп)</string>
+    <string name="order_info_time_start">Время С</string>
+    <string name="order_info_time_end">Время По</string>
+    <string name="order_info_photo">Прикрепление фото</string>
+    <string name="order_info_photo_exceed_limit_title">Достигнут предел фотографий</string>
+    <string name="order_info_photo_exceed_limit_body">Уже добавлено максимальное число фотографий к заказу</string>
+    <string name="order_info_remove_image_confirm_message">Вы уверены, что хотите удалить фото?</string>
+    <string name="order_info_remove_image_confirm_yes">Да, удалить</string>
+    <string name="order_info_remove_image_confirm_no">Отмена</string>
+
+    <!-- Order info add image dialog-->
+    <string name="order_info_add_photo_camera">Сфотографировать</string>
+    <string name="order_info_add_photo_gallery">Выбрать из галереи</string>
+    <string name="order_info_cancel">Отменить</string>
+
+    <!-- Image-->
+    <string name="photo_full_title">Фото %d</string>
+
+    <!-- Order edit -->
+    <string name="order_edit_add">Добавить</string>
+    <string name="order_edit_create_date">Дата создания</string>
+    <string name="order_edit_create_time">Время создания</string>
+    <string name="order_edit_number">Номер заказа</string>
+    <string name="order_edit_address">Адрес</string>
+    <string name="order_edit_phone">Номер телефона</string>
+    <string name="order_edit_date">Дата выезда</string>
+    <string name="order_edit_time">Время выезда</string>
+    <string name="order_edit_type">Вид техники</string>
+    <string name="order_edit_name">Название техники</string>
+    <string name="order_edit_description">Описание комплектации</string>
+    <string name="order_edit_description_malfunction">Описание неисправности</string>
+    <string name="order_edit_description_step">Описание этапа ремонта</string>
+
+    <!-- Catalog -->
+    <string name="catalog_hint_type">Например: телевизор</string>
+    <string name="catalog_hint_name">Например: Xiaomi</string>
+    <string name="catalog_input_type">Вид техники</string>
+    <string name="catalog_input_name">Название техники</string>
+    <string name="catalog_title_name">Выбор названия техники</string>
+    <string name="catalog_title_type">Выбор типа техники</string>
+    <string name="catalog_title_status">Выбор статуса</string>
+    <string name="catalog_input_status">Выбор статуса</string>
+    <string name="catalog_hint_status">Например: В работе</string>
+
+    <string name="yacht_cabinet_title">Кабинет капитана</string>
+    <string name="yacht_filter_title">Фильтр</string>
+    <string name="yacht_filter_date_hint">в рублях</string>
+    <string name="yacht_filter_price_start">Цена С</string>
+    <string name="yacht_filter_price_end">Цена По</string>
+    <string name="yacht_filter_quantity">Количество гостей</string>
+    <string name="yacht_filter_type">Тип аренды</string>
+    <string name="yacht_type_day">Посуточно</string>
+    <string name="yacht_type_hours">Почасово</string>
+
+    <string name="yacht_price">Цена:</string>
+    <string name="yacht_type">Тип:</string>
+    <string name="yacht_name">Название:</string>
+    <string name="yacht_quantity">Количество гостей:</string>
+    <string name="yacht_list_title">Подобранные яхты</string>
+    <string name="yacht_send_request">Отправить заявку</string>
+
+    <string name="yacht_captain_incoming_order_title">Вам пришел заказ</string>
+    <string name="yacht_captain_incoming_order_hint">Скорее связываейтейсь с клиентом</string>
+    <string name="yacht_client_send_order">Заказ отправлен</string>
+    <string name="yacht_client_allow_order">Вы можете теперь делать заказы</string>
+    <string name="yacht_socket_error">Ошибка при подключении</string>
+
+    <!-- Filter -->
+    <string name="filter_date_hint">00.00.0000</string>
+    <string name="filter_date_start">Дата С</string>
+    <string name="filter_date_end">Дата По</string>
+    <string name="filter_number_hint">Введите номер заказа</string>
+    <string name="filter_phone_hint">Введите телефон контрагента</string>
+    <string name="filter_type_hint">Выберите вид техники</string>
+    <string name="filter_name_hint">Выберите название техники</string>
+    <string name="filter_date_input">Дата</string>
+    <string name="filter_number_input">Номер заказа</string>
+    <string name="filter_customer_input">Контрагент</string>
+    <string name="filter_phone_input">Телефон контрагента</string>
+    <string name="filter_type_input">Вид техники</string>
+    <string name="filter_name_input">Название техники</string>
+    <string name="filter_status_input">Статус</string>
+    <string name="filter_type_date">Дата</string>
+    <string name="filter_type_order_num">Номер заказа</string>
+    <string name="filter_type_customer_phone">Тел. контрагента</string>
+    <string name="filter_type_customer_tech_name">Название</string>
+    <string name="filter_type_customer_tech_type">Вид</string>
+    <string name="filter_type_none"></string>
+    <string name="filter_start_more_end">Некорректное время! Установите стартовую дату меньше, чем финишную</string>
+    <string name="filter_end_less_start">Некорректное время! Установите финишную дату больше, чем стартовую</string>
+
+    <!-- Exit -->
+    <string name="exit_title">Вы действительное хотите выйти ?</string>
+    <string name="exit_confirm">Да</string>
+    <string name="exit_deny">Остаться</string>
+
+    <string name="new_yacht_orders">Новый заказ</string>
+    <string name="new_yacht_orders_number">№ 45555</string>
+    <string name="blind_close">Закрыть</string>
+    <string name="start_search">Найти яхту</string>
+    <string name="start_search_now">Заказать яхту сейчас</string>
+
+    <!-- Status Order -->
+    <string name="order_info_accept">Принять</string>
+    <string name="order_info_refuse">Отклонить</string>
+    <string name="order_info_complete">Завершить заказ</string>
+    <string name="order_info_complete_confirm">Завершить</string>
+    <string name="order_info_close">Закрыть</string>
+    <string name="order_info_confirm_accept">Вы действительное берете заказ в работу ?</string>
+    <string name="order_info_confirm_refuse">Вы действительное хотите отклонить заказ ?</string>
+    <string name="order_info_confirm_complete">Вы действительное хотите завершить заказ ?</string>
+
+    <string name="notification_more_title">Установка дополнительного оповещения</string>
+    <string name="notification_comment">Ваш комментарий</string>
+    <string name="notification_accept">Сохранить</string>
+    <string name="notification_reject">Отменить</string>
+    <string name="notification_title">Оповещения</string>
+    <string name="notification_time">Оповестить за:</string>
+    <string name="notification_success">Уведомления обновлены</string>
+    <string-array name="notification_time_strings">
+        <item>5 мин</item>
+        <item>10 мин</item>
+        <item>15 мин</item>
+        <item>30 мин</item>
+        <item>1 час</item>
+        <item>2 часа</item>
+        <item>3 часа</item>
+        <item>4 часов</item>
+        <item>Выкл</item>
+    </string-array>
+
+    <string-array name="status_order_strings">
+        <item>открыт</item>
+        <item>в работе</item>
+        <item>думает</item>
+        <item>готов</item>
+        <item>завершен</item>
+    </string-array>
+
+    <string name="about_app_body">
+        <b>Индивидуальный предприниматель:</b> \n
+        <b>Кудрявцева Екатерина Константиновна</b> \n
+        <b>ИНН 590615292944, ОГРНИП 319595800117155</b> \n\n
+
+        <b>Юридический, почтовый адрес:</b>\n
+        614051, Россия, г.Пермь, ул.Юрша,  д.25/1, кв.53\n\n
+
+        <b>Фактические адреса мастерских:</b>\n
+        614039, Россия, г.Пермь, ул.Пионерская, д.12\n
+        614064, Россия, г.Пермь, ул.Л.Шатрова, д.32\n\n
+
+        <b>Телефон общий / бухгалтерии:</b>\n
+        8 (342) 206-61-91 / 8 (342) 206-21-08\n\n
+
+        <b>Электронные почты:</b>\n
+        z2788090@yandex.ru avangardperm.ru\n\n
+
+        Приложение для мастера по управлению\n
+        заказами ремонта техники
+</string>
+    <string name="about_creator_app"><a href="https://gravity-group.ru/">Разработчик ООО «Gravity Group»</a></string>
+    <string name="base_city_name">Пермь</string>
+
+    <string name="okay_text">OK</string>
+</resources>

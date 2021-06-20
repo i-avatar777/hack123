@@ -1,0 +1,91 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+opt_out_usage
+GITLAB_TOKEN = ENV['gitlab_api_access_token']
+PROJECT_ID = ENV['CI_PROJECT_ID']
+REF = ENV['CI_COMMIT_REF_NAME']
+JOB = ENV['CI_JOB_NAME']
+API_ROOT = ENV['CI_API_V4_URL']
+FB_APP_ID_DEMO=ENV['FIREBASE_APP_ID_DEMO']
+FB_APP_ID_DEV=ENV['FIREBASE_APP_ID_DEV']
+FB_APP_ID_PROD=ENV['FIREBASE_APP_ID_PROD']
+FB_TESTERS_GRP=ENV['TESTERS_GROUP']
+
+
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Deploy a demo version to the FireBase"
+  lane :demoDebug2firebase do
+    gradle(task: "assembledemoDebug")
+    firebase_app_distribution(
+      app: "#{FB_APP_ID_DEMO}",
+      groups: "#{FB_TESTERS_GRP}",
+    )
+  end
+
+  desc "Deploy a dev version to the FireBase"
+  lane :devDebug2firebase do
+    gradle(task: "assembledevDebug")
+    firebase_app_distribution(
+      app: "#{FB_APP_ID_DEV}",
+      groups: "#{FB_TESTERS_GRP}",
+    )
+  end
+
+  desc "Deploy a prod version to the FireBase"
+  lane :prodDebug2firebase do
+    gradle(task: "assembleprodDebug")
+    firebase_app_distribution(
+      app: "#{FB_APP_ID_PROD}",
+      groups: "#{FB_TESTERS_GRP}",
+    )
+  end
+
+  desc "Build Release"
+  lane :buildRelease do
+    gradle(task: "clean bundleRelease")
+  end
+end
+
+#default_platform(:android)
+
+#platform :android do
+#  desc "Runs all the tests"
+#  lane :test do
+#    gradle(task: "test")
+#  end
+
+#  desc "Submit a new Beta Build to Crashlytics Beta"
+#  lane :beta do
+#    gradle(task: "clean assembleRelease")
+#    crashlytics
+  
+    # sh "your_script.sh"
+    # You can also use other beta testing services here
+#  end
+
+#  desc "Deploy a new version to the Google Play"
+#  lane :deploy do
+#    gradle(task: "clean assembleRelease")
+#    upload_to_play_store
+#  end
+#end

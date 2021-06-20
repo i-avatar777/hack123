@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SplashScreenTheme" parent="Theme.Avangard">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+        <!-- Full screen -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Text" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black2</item>
+    </style>
+
+    <style name="AppTheme.InputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">@color/selector_border_textinput</item>
+        <item name="boxStrokeColor">@color/selector_border_textinput</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="errorIconDrawable">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <!--<item name="colorError">@color/red</item>-->
+    </style>
+
+    <style name="DatePickerTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorAccent">@color/mainButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerTheme.ButtonBarNegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerTheme.ButtonBarPositiveButtonStyle</item>
+    </style>
+
+    <style name="DatePickerTheme.ButtonBarNegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/mainButton</item>
+    </style>
+
+    <style name="DatePickerTheme.ButtonBarPositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/mainButton</item>
+    </style>
+
+    <style name="AppTheme.EditText" parent="Widget.AppCompat.EditText">
+        <!--<item name="android:textColor">@color/black3</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="backgroundTint">@color/selector_edittext_bg</item>
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor_bg</item>
+        <item name="android:paddingBottom">@dimen/edittext_text_bottom</item>
+        <item name="android:textSelectHandle">@android:color/transparent</item>
+        <item name="android:textSelectHandleLeft">@android:color/transparent</item>
+        <item name="android:textSelectHandleRight">@android:color/transparent</item>
+        <item name="android:textColorHighlight">@color/black2_20</item>-->
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/default_button_text_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="backgroundTint">@color/selector_button_color</item>
+        <item name="android:gravity">center</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:paddingTop">@dimen/default_padding_small</item>
+        <item name="android:paddingBottom">@dimen/default_padding_small</item>
+    </style>
+
+    <style name="AppTheme.TextButton" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:background">@color/mainButton</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:paddingStart">@dimen/default_margin</item>
+    </style>
+
+    <style name="AppTheme.SelectableButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:paddingStart">@dimen/default_margin_xsmall</item>
+        <item name="android:paddingEnd">@dimen/default_margin_xsmall</item>
+        <item name="android:paddingTop">@dimen/default_margin_xsmall</item>
+        <item name="android:paddingBottom">@dimen/default_margin_xsmall</item>
+        <item name="android:layout_marginEnd">@dimen/default_margin_20</item>
+    </style>
+
+    <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView" />
+
+    <!-- AppBar -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarStyle">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/default_text_title</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/deep_blue</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Neutral</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Neutral</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/dark_grey</item>
+        <item name="rippleColor">@color/mainButtonDisable</item>
+        <item name="android:textColor">@color/mainButton</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Alert.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/dark_grey</item>
+        <item name="rippleColor">@color/mainButtonDisable</item>
+        <item name="android:textColor">@color/mainButtonPressed</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Button -->
+    <style name="Button" parent="AppTheme.Button"></style>
+
+    <style name="Button.Auth">
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Button.Light">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/button_blue_gray</item>
+        <item name="android:strokeColor">@color/button_blue_gray</item>
+        <item name="strokeColor">@color/button_blue_gray</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="Button.Orange" parent="AppTheme.Button">
+        <item name="backgroundTint">@color/orange</item>
+    </style>
+
+    <style name="Button.Yacht">
+        <item name="backgroundTint">@color/yachtButton</item>
+        <item name="android:background">@drawable/yacht_corners_all</item>
+        <item name="android:textColor">@color/yachtSecondaryText</item>
+    </style>
+
+    <style name="ButtonBorder" parent="Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <style name="ButtonBorder.Yacht">
+        <item name="android:background">@drawable/yacht_corners_border</item>
+        <item name="backgroundTint">@color/yachtButtonPressed</item>
+        <item name="android:textColor">@color/yachtText</item>
+        <item name="strokeColor">@color/yachtText</item>
+    </style>
+
+    <style name="Button.LightYacht">
+        <item name="android:background">@drawable/yacht_corners_border</item>
+        <item name="android:strokeColor">@color/yachtText</item>
+        <item name="android:textColor">@color/yachtText</item>
+        <item name="backgroundTint">@color/yachtButtonPressed</item>
+        <item name="backgroundTintMode">multiply</item>
+        <item name="strokeColor">@color/yachtText</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Material EditText -->
+    <style name="LoginInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">@dimen/default_padding</item>
+        <item name="android:layout_marginEnd">@dimen/default_padding</item>
+        <item name="hintEnabled">true</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="hintTextColor">@color/selector_border_textinput</item>
+        <item name="boxStrokeColor">@color/selector_border_textinput</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+
+    <style name="InputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintEnabled">true</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="hintTextColor">@color/selector_border_textinput</item>
+        <item name="boxStrokeColor">@color/selector_border_textinput</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="theme">@style/TextInputLayoutAppearance</item>
+    </style>
+
+    <style name="InputLayout.Search">
+        <item name="hintTextColor">@color/selector_border_searchfield</item>
+        <item name="boxStrokeColor">@color/selector_border_searchfield</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/deep_blue</item>
+        <item name="colorControlHighlight">@color/blue</item>
+    </style>
+
+    <style name="LoginFieldStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:minHeight">@dimen/edit_text_min_height</item>
+        <item name="android:padding">@dimen/default_padding</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:minHeight">@dimen/edit_text_min_height</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="EditBigTextStyle">
+        <item name="android:minHeight">@dimen/edit_big_text_min_height</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Text View-->
+    <style name="TextView">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextView.Small.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Small">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextView.Title">
+        <item name="android:textSize">@dimen/default_text_title</item>
+    </style>
+
+    <style name="TextView.Title.YachtBig">
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="TextView.Title.Big">
+        <item name="android:textSize">@dimen/default_text_header</item>
+    </style>
+
+    <style name="TextView.Title.Big.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="YachtView">
+        <item name="android:textColor">@color/yachtSecondaryText</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="YachtView.Big">
+        <item name="android:textSize">@dimen/default_text_header</item>
+    </style>
+
+    <style name="NavUserNameTextView">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_title</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="SupportTitleTextView">
+        <item name="android:textColor">@color/mainBlueText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="SupportTitleTextView.Default">
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="SupportPhoneTextView">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="SupportPhoneTextView.Left">
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="AuthErrorTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!-- Profile-->
+    <style name="ProfileValueTitleTextView">
+        <item name="android:textColor">@color/mainBlueText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ProfileValueTextView">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!-- Main Screen -->
+    <style name="EmptyOrderTextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/mainBlueText</item>
+        <item name="android:textSize">@dimen/default_text_size_x</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="OrderItemTitleTextView">
+        <item name="android:textColor">@color/mainTitle</item>
+        <item name="android:textSize">@dimen/default_text_title</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="OrderFieldTitleTextView">
+        <item name="android:textColor">@color/mainBlueText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="OrderFieldTextView">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="OrderFieldYachtTextView">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_size_x_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="OrderFieldPhoneTextView">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!--Order Info -->
+
+    <style name="OrderInfoFieldTitleTextView">
+        <item name="android:textColor">@color/mainBlueText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="OrderInfoFieldTextView">
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:textSize">@dimen/default_text_size_small</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="OrderInfoFieldPhotoTextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/default_text_size_x</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomMapBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomMapBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomMapBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground"> @android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SpinnerItemTextView">
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">@dimen/default_big_text</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+</resources>

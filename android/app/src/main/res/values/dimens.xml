@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margin -->
+    <dimen name="default_zero">0dp</dimen>
+    <dimen name="default_elevation">2dp</dimen>
+    <dimen name="default_margin_small">4dp</dimen>
+    <dimen name="default_margin_xsmall">8dp</dimen>
+    <dimen name="default_margin_6">6dp</dimen>
+    <dimen name="default_margin_10">10dp</dimen>
+    <dimen name="default_margin_xxsmall">12dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_20">20dp</dimen>
+    <dimen name="default_margin_double_half">24dp</dimen>
+    <dimen name="default_margin_double_extra">28dp</dimen>
+    <dimen name="default_margin_double">32dp</dimen>
+    <dimen name="default_margin_upper_double_36">36dp</dimen>
+    <dimen name="default_margin_sbig">40dp</dimen>
+    <dimen name="default_margin_big">44dp</dimen>
+    <dimen name="default_margin_large">52dp</dimen>
+    <dimen name="default_margin_slarge">60dp</dimen>
+
+    <dimen name="default_loading_elevation">6dp</dimen>
+    <dimen name="size_more_extra_large">40dp</dimen>
+
+
+    <!-- Padding -->
+    <dimen name="default_padding_small_half">8dp</dimen>
+    <dimen name="default_padding_small">12dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_padding_double">32dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="default_text_size_tiny">4sp</dimen>
+    <dimen name="default_text_size_x_small">10sp</dimen>
+    <dimen name="default_text_size_small">14sp</dimen>
+    <dimen name="default_text_size">16sp</dimen>
+    <dimen name="default_text_size_x">18sp</dimen>
+    <dimen name="default_text_title">18sp</dimen>
+    <dimen name="default_text_header">24sp</dimen>
+    <dimen name="default_button_text_size">17sp</dimen>
+    <dimen name="default_big_text">32sp</dimen>
+
+    <!-- Size -->
+    <dimen name="button_min_height">48dp</dimen>
+    <dimen name="default_button_min_height">43dp</dimen>
+    <dimen name="edit_text_min_height">56dp</dimen>
+    <dimen name="edit_big_text_min_height">100dp</dimen>
+    <dimen name="button_corner_radius">4dp</dimen>
+    <dimen name="default_corner_radius">10dp</dimen>
+    <dimen name="action_corner_radius">6dp</dimen>
+    <dimen name="avatar_size">48dp</dimen>
+
+    <!-- Master orders -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="hour_height">30dp</dimen>
+    <dimen name="hour_label_width">65dp</dimen>
+
+    <dimen name="address_order_height">214dp</dimen>
+    <dimen name="address_order_content_height">174dp</dimen>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Socket.io_Android</string>
+    <string name="yacht_captain_incoming_order">Вам пришел заказ</string>
+    <string name="yacht_client_send_order">Вы можете теперь делать заказы</string>
+</resources>

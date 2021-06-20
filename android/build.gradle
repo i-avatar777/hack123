@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: "versions.gradle"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath 'com.google.gms:google-services:4.3.8'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
+        // Detekt https://github.com/detekt/detekt
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detekt_version"
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.0'
+    }
+}
+
+allprojects {
+    apply from: "$rootDir/detekt.gradle"
+
+    repositories {
+        google()
+        jcenter()
+        // maven { url "http://artifactory.surfstudio.ru/artifactory/libs-release-local" }
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

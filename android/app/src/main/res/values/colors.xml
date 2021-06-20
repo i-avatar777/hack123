@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainBackgroundColor">@color/light_blue</color>
+    <color name="mainWhiteBackgroundColor">@color/white</color>
+    <color name="mainBackgroundOptionalColor">@color/white_20</color>
+    <color name="secondaryBackgroundColor">@color/blue_grey</color>
+
+    <!-- Common -->
+    <color name="error">@color/red</color>
+    <color name="mainText">@color/dark_grey</color>
+    <color name="mainTitle">@color/dark_grey2</color>
+    <color name="secondaryText">@color/light_blue</color>
+    <color name="mainBlueText">@color/dark_blue_grey</color>
+    <color name="divider">#EDEDED</color>
+    <color name="basePin">@color/orange</color>
+    <color name="activePin">@color/green</color>
+    <color name="inactivePin">@color/light_gray</color>
+
+    <!-- Button -->
+    <color name="mainButtonDisable">@color/blue_grey</color>
+    <color name="mainButtonActive">@color/dark_blue_grey</color>
+    <color name="mainButtonPressed">@color/button_blue_gray</color>
+    <color name="mainButton">@color/deep_blue</color>
+    <color name="buttonBackground">@color/blue</color>
+
+    <color name="yachtText">@color/black</color>
+    <color name="yachtSecondaryText">@color/white</color>
+
+    <color name="yachtButtonDisable">@color/blue_grey</color>
+    <color name="yachtButtonActive">@color/marine_40</color>
+    <color name="yachtButtonPressed">@color/marine_20</color>
+    <color name="yachtButton">@color/marine_40</color>
+    <color name="yachtButtonBackground">@color/blue</color>
+
+    <!-- Color -->
+    <color name="black">#FF000000</color>
+    <color name="black2">#0F1014</color>
+    <color name="black2_60">#990F1014</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_20">#F1F1F1</color>
+    <color name="red">#B52C23</color>
+    <color name="light_blue">#F5F9FF</color>
+    <color name="deep_blue">#3E89F2</color>
+    <color name="deep_blue_50">#803E89F2</color>
+    <color name="dark_grey">#313A46</color>
+    <color name="dark_grey2">#212426</color>
+    <color name="light_gray">#959595</color>
+    <color name="dark_blue_grey">#65758C</color>
+    <color name="button_blue_gray">#688BBD</color>
+    <color name="blue_grey">#BEC9DA</color>
+    <color name="blue">#C1D5F1</color>
+    <color name="orange">#FF6600</color>
+    <color name="green">#04CD00</color>
+
+    <color name="marine_40">#1A3E6D</color>
+    <color name="marine_20">#92B3C6</color>
+    <color name="marine_10"></color>
+    <color name="marine_50"></color>
+
+    <color name="statusBarColor">@color/black2_60</color>
+    <color name="navBarColor">@android:color/transparent</color>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SpinnerItemTextView"
+    android:paddingStart="@dimen/default_padding_small_half"
+    android:paddingEnd="@dimen/default_padding_small_half"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center" />

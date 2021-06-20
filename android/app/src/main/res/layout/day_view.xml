@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TextView.Small"
+    android:id="@+id/tvHour"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:textAlignment="center"
+    tools:ignore="RtlCompat"
+    tools:text="13:00" />

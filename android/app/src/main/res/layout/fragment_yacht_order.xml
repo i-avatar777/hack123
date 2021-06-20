@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderInfoContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="4dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="760dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:background="@color/yachtButtonPressed">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/confirmDialogRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/orderTitle"
+            style="@style/YachtView.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_padding"
+            android:layout_marginTop="@dimen/default_margin_20"
+            android:layout_marginEnd="@dimen/default_padding"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/orderNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline1"
+            android:text="@string/new_yacht_orders" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/orderNumber"
+            style="@style/YachtView.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_padding"
+            android:layout_marginTop="@dimen/default_margin_20"
+            android:layout_marginEnd="@dimen/default_padding"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/tilComment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderTitle"
+            android:text="@string/new_yacht_orders_number" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilComment"
+            style="@style/InputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_padding"
+            android:layout_marginTop="@dimen/default_margin_20"
+            android:layout_marginEnd="@dimen/default_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etComment"
+                style="@style/EditBigTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/notification_comment"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/orderYachtDeny"
+            style="@style/Button.LightYacht"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_upper_double_36"
+            android:layout_marginEnd="@dimen/default_margin_xsmall"
+            android:layout_marginBottom="@dimen/default_margin_large"
+            app:layout_constraintEnd_toStartOf="@id/orderYachtApply"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilComment"
+            android:text="@string/order_info_refuse" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/orderYachtApply"
+            style="@style/Button.Yacht"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_xsmall"
+            android:layout_marginTop="@dimen/default_margin_upper_double_36"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/orderYachtDeny"
+            app:layout_constraintTop_toBottomOf="@id/tilComment"
+            android:text="@string/order_info_accept" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_to_master_orders"
+        android:icon="@drawable/ic_orders"
+        android:title="@string/menu_order" />
+
+    <item
+        android:id="@+id/action_to_orders"
+        android:icon="@drawable/ic_orders_consideration"
+        android:title="@string/menu_order_consideration" />
+
+    <item
+        android:id="@+id/action_to_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_settings" />
+
+    <item
+        android:id="@+id/action_to_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/menu_profile" />
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/menu_order_history" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about" />
+
+    <item
+        android:id="@+id/action_to_exit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/menu_exit" />
+</menu>
