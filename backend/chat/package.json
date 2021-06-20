@@ -1,0 +1,24 @@
+{
+  "name": "i-am-avatar-chat",
+  "version": "1.0.0",
+  "description": "Chat for avatar network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Ra-m-ha@bitbucket.org/gsss/i-am-avatar-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "socketio"
+  ],
+  "author": "Svyat Arhangelsky <god@galaxysss.ru>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/gsss/i-am-avatar-chat#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.3.0"
+  }
+}
