@@ -17,5 +17,6 @@ Mobile:
 
 Для клиента:
 https://drive.google.com/file/d/1fQm8AAjvClFj0xEMI2ba-FMj9hfSUQ3q/view?usp=sharing
+
 Для капитана:
 https://drive.google.com/file/d/1IGMUFa1QNpZBdhuz9ns7gB2Y54oNni1l/view?usp=sharing
